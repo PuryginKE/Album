@@ -1,0 +1,45 @@
+
+.container {
+    margin: 20px auto;
+    max-width: 2000px;
+    color: white;
+    background-color: white;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 20px;
+}
+
+.pic{
+   /*
+    padding: 1.5rem;
+   background-color: dimgray;
+    border: 1px darkgray solid; */
+}
+
+.logo img{
+   width: 100%;
+  
+}
+.picture{
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow: hidden;
+    
+}
+.text{
+    margin-top: 10px;
+    width: 450px;
+    text-align: left;
+    color: rgb(92, 91, 91);
+    font-weight: bold;
+}
+.date{
+    margin-top: 10px;
+    text-align: left;
+    color: rgb(161, 161, 161);
+    font-weight: lighter;
+    font-size: 14px;
+}

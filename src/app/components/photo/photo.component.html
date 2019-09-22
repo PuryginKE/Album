@@ -1,0 +1,16 @@
+
+<div class="purple">
+    <div [routerLink]="'/'" class="return"><img src="/assets/pic/10.svg"></div>
+    <div class="green" [ngStyle]="{'transform': 'translateX(' + rout + '%)'}">
+      <div *ngFor="let obj of objs; let i=index" class="red">
+        <div [routerLink]="'/photo/' + obj.id" [class.active]="i == currentIndex" [ngStyle]="{'background-image': 'url(' + obj.pic + ')' }" class="image"></div>
+        <div class="text">{{obj.text}}</div>
+      </div>
+  </div>
+
+<!---  <div class="arrow left" (click)="onBack()"></div>
+  <div class="arrow right" (click)="onNext()"></div> --> 
+
+</div>
+
+

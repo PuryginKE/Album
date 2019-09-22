@@ -1,0 +1,15 @@
+
+<div class="logo">
+  <img src="/assets/pic/8.jpg">
+</div>
+<div class="container">
+  <div *ngFor="let obj of objs" class="pic">
+          <a [routerLink]="['/photo/' + obj.id]">
+              <div [ngStyle]="{'background-image': 'url(' + obj.pic + ')' }" class="picture"></div>
+         <!---  <img class="picture" src={{item.pic}}> -->
+          </a>
+          <div class="text">{{obj.text}}</div>
+          <div class="date">{{obj.date}}</div>
+  </div>
+  
+</div>
